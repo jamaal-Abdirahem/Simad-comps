@@ -1,0 +1,150 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gochi+Hand&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1{
+  font-size: 20px;
+  font-weight: 600;
+}
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.logo-login {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.logo-login h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffff;
+}
+.logo-login img {
+  width: 1.5em;
+}
+
+.simad-logo-box {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: #ffff;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.simad-logo {
+  width: 3.3em;
+  height: 3.3em;
+  border-radius: 50%;
+  background-image: url(./Images/post-default.png);
+  background-size: cover;
+}
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_form--container{
+  width: 60%;
+  height: 75vh;
+  background-color: #14d253bf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.login--left_side{
+  width: 50%;
+  height: 75vh;
+  background-image: linear-gradient(
+    rgba(29, 38, 142, 0.832),
+    rgba(6, 38, 105, 0.906)
+  );
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+position: relative;
+}
+form {
+  width: 50%;
+  height: 75vh;
+  background-color: #ffffffef;
+  padding: 3% 5%;
+}
+.form--txt {
+  text-align: left;
+  padding: 0% 11%;
+  color: #ffff;
+  position: absolute;
+  top: 30%;
+}
+.form--txt h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.form--txt p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0.9em;
+  opacity: 0.88;
+}
+.form--inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 3em;
+  text-align: center;
+}
+.form--inputs input {
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #004f8d;
+  padding-left: 1em;
+}
+.form--inputs input[type="text"],
+.form--inputs input[type="password"] {
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form--inputs input[type="submit"] {
+  border: none;
+  background-color: #004f8d;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0%;
+  margin-bottom: 0.5em;
+}
+.form--inputs input:focus {
+  border: 2px solid #00508d98;
+  box-shadow: 0 0 4px rgba(0, 80, 141, 0.2);
+}
+.form--inputs a,
+span.span-01 {
+  font-size: 14px;
+  color: #004f8d;
+}
+.form--inputs a{
+    font-weight: 500;
+}

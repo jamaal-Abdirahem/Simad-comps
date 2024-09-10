@@ -1,0 +1,40 @@
+      <div class="vote-container">
+        <div class="vote-text">
+          <h3>Cast Your Vote to Shape the Future of SIMAD</h3>
+          <p>
+            Welcome to the official SIMAD Cast Voting Platform. Your voice
+            matters. Select your preferred candidates for each position and play
+            a vital role in shaping the leadership of our university. Every vote
+            counts, so make sure to review your choices carefully before
+            submitting. Let’s build a brighter future together . one vote at a
+            time.
+          </p>
+        </div>
+        <form action="" class="vote-form">
+          <label for="">Election's position</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </form>
+      </div>
+
+
+
+Total faculties = 9
+
+      ---Current Election Faculties---
+      1. Computing
+      2. Economic
+      3. Law
+      4. Accounting
+      5. Social science
+      6. Engineering
+
+      ---Upcoming Election Faculties---
+      1. XAjsi (done)
+      2. Education
+      3. Management (done)
+      4. Medicine

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simad Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo.jpeg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- home -->
+    <section id="home">
+      <header class="header">
+        <div class="header-logo">
+        <img src="./images/logo.png" width= "60rem"/>
+        <a class="logo" href="#">DHOOBAALE Library</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    </div>
+    <div class="navbar">
+          <a href="#home"><span>Home</span></a>
+          <a href="./books.html">Books</a>
+          <a href="#skills">Audiobooks</a>
+          <a href="#categories">Categories</a>
+          <a href="#contact">Magazine</a> 
+          <a href="#testimonials">Testimonials</a>
+    </div>
+    <div class="header-icons">
+        <i class="bx bx-user" id="login-button"></i>
+        <i class="bx bx-moon" id="moon-icon"></i>
+    </div>
+      </header>
+      <div class="hero-section">
+      <video autoplay muted loop id="myvideo">
+        <source src="./video/home-video.mp4" type="video/mp4">
+    </video>
+    <div class="home-content">
+      <h3>Welcome <span>To Library</span></h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+         praesentium.<br> Qui nesciunt ex eius nisi quasi soluta ducimus
+         ipsa consequatur voluptate <br>neque, animi unde</p>
+    </div>
+  </div>
+    <!------------------- search bar ------------->
+    <div class="search-bar">
+          <select id="year-select">
+            <option value="">Year</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2023</option>
+          </select>
+          <select id="publisher-select">
+            <option value="">Publisher</option>
+          </select>
+          <input type="text" id="search-input" placeholder="Enter book name here">
+          <button id="search-button">Search</button>
+        </div>
+    </section>
+    <!-- trending boxes -->
+    <section id="trending-books">
+      <div class="trending-title">
+        <h3>Trending this week</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quisquam eum adipisci nihil.</p>
+      </div>
+      <div class="books">
+      <div class="first-book">
+        <img src="./images/firstbook.jpg" width="330rem">
+      </div>
+      <div class="trending-books">
+        <img src="./images/book1.jpg" width="110rem" height="160rem">
+        <img src="./images/book2.jpg" width="110rem" height="160rem">
+        <img src="./images/book3.jpg" width="110rem" height="160rem">
+        <img src="./images/book7.jpg" width="110rem" height="160rem">
+        <img src="./images/book4.jpg" width="110rem" height="160rem">
+        <img src="./images/book5.jpg" width="110rem" height="160rem">
+        <img src="./images/book6.jpg" width="110rem" height="160rem">
+        <img src="./images/book8.jpg" width="110rem" height="160rem">
+      </div>
+    </div>
+    </section>
+    <!-- featured-boxes -->
+    <div class="featured-book">
+      <h1>Featured Book</h1>
+      <div class="featured-boxes">
+        <div class="featured-card">
+          <div class="card-img">
+            <img src="./images/feature2.jpg" width="160rem" height="220rem">
+          </div>
+          <div class="featured-data">
+            <div class="featured-information">
+              <button id="">Islamic</button>
+              <div class="featured-icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+       
+                  <h2>159 Reviews</h2>
+            </div>
+            
+                <h1>The Productive Muslim</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Ducimus laboriosam vita.</p>
+                <a href="#"><button class="read-btn">Read</button></a>
+                <div class="heart-icon">
+                  <i class="fa-solid fa-heart "></i>
+                </div>
+          </div>
+         
+        </div>
+        <div class="featured-card">
+          <div class="card-img">
+            <img src="./images/feature1.jpg" width="160rem" height="220rem">
+          </div>
+          <div class="featured-data">
+            <div class="featured-information">
+              <button id="">Islamic</button>
+              <div class="featured-icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+       
+                  <h2>109 Reviews</h2>
+            </div>
+            
+                <h1>The Happiness equation</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Ducimus laboriosam vita.</p>
+                <a href="#"><button class="read-btn">Read</button></a>
+                <div class="heart-icon">
+                  <i class="fa-solid fa-heart "></i>
+                </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <div class="box-contents">
+      <div class="card-contents">
+        <i class='bx bxs-time-five'></i>
+        <h2>Quick delivery</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, odio ipsum ducimus reprehenderit</p>
+      </div>
+      <div class="card-contents">
+        <i class='bx bxs-credit-card'></i>
+        <h2>Quick delivery</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, odio ipsum ducimus reprehenderit </p>
+      </div>
+      <div class="card-contents">
+        <i class='bx bx-award'></i>
+        <h2>Quick delivery</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, odio ipsum ducimus reprehenderit </p>
+      </div>
+      <div class="card-contents">
+        <i class='bx bxs-shield'></i>
+        <h2>Quick delivery</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis, odio ipsum ducimus reprehenderit consequuntur  </p>
+      </div>
+    </div>
+    <!-- categories -->
+     <section id="categories">
+      <h3>Categories</h3>
+      <div class="categories-boxes">
+        <div class="category-card">
+          <img src="./images/category1.jpg" width="150rem" height="80rem">
+          <h2>Computing Books</h2>
+          <p>10+</p>
+        </div>
+        <div class="category-card">
+          <img src="./images/category2.jpg" width="150rem" height="80rem">
+          <h2>Business Books</h2>
+          <p>22+</p>
+        </div>
+        <div class="category-card">
+          <img src="./images/category3.jpg" width="150rem" height="80rem">
+          <h2>Law Books</h2>
+          <p>30+</p>
+        </div>
+        <div class="category-card">
+          <img src="./images/category4.jpg" width="150rem" height="80rem">
+          <h2>Islamic Books</h2>
+          <p>100+</p>
+        </div>
+        <div class="category-card">
+          <img src="./images/category5.jpg" width="150rem" height="80rem">
+          <h2>economic Books</h2>
+          <p>10+</p>
+        </div>
+        <div class="category-card">
+          <img src="./images/category6.jpg" width="150rem" height="80rem">
+          <h2>Accounting Books</h2>
+          <p>8+</p>
+        </div>
+        <div class="category-card">
+          <img src="./images/category7.jpg" width="150rem" height="80rem">
+          <h2>Engineering Books</h2>
+          <p>30+</p>
+        </div>
+      </div>
+     </div>
+    </section>
+    <!-- rated books -->
+         <div class="rate-book">
+      <h3>10 Top Rated Books</h3>
+      <div class="rated-boxes">
+        <div class="rated-card">
+          <img src="./images/rate1.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>Don't Overthink It</h2>
+          <p>Anne Bogal</p>
+          <button>Read</button>
+        </div>
+        <div class="rated-card">
+          <img src="./images/rate2.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>Mindset</h2>
+          <p>Dr Carols's Dweck</p>
+          <button>Read</button>
+        </div>
+        <div class="rated-card">
+          <img src="./images/rate3.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>Jacayl</h2>
+          <p>Omar Mohamed</p>
+          <button>Read</button>
+        </div>
+        <div class="rated-card">
+          <img src="./images/rate4.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>365 Days</h2>
+          <p>Martin Meadows</p>
+          <button>Read</button>
+        </div>
+        <div class="rated-card">
+          <img src="./images/rate6.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>The Fact of the Body</h2>
+          <p>Alexandria Marzano</p>
+          <button>Read</button>
+        </div>
+        <!-- <div class="rated-card">
+          <img src="./images/rate7.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>Believe In Your Self</h2>
+          <p>Dr Joseph Murphy</p>
+          <button>Read</button>
+        </div>
+        <div class="rated-card">
+          <img src="./images/rate8.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>The Girl of Clay</h2>
+          <p>Nicole Meier</p>
+          <button>Read</button>
+        </div>
+        <div class="rated-card">
+          <img src="./images/rate9.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>Inuition</h2>
+          <p>Amisha Ghadiali</p>
+          <button>Read</button>
+        </div>
+        <div class="rated-card">
+          <img src="./images/rate10.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h2>More Time To Think</h2>
+          <p>Nancy Kline</p>
+          <button>Read</button>
+        </div>
+        <div class="rated-card">
+          <img src="./images/rate5.jpg" width="110rem" height="160rem">
+          <div class="rated-icons">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+          <h2>The Power Within Me</h2>
+          <p>Dr Annice. Fisher</p>
+          <button>Read</button>
+        </div> -->
+      </div>
+    </div>
+    <!-- newsletter -->
+    <div class="news">
+      <h4>Latest News</h4>
+      <p class="new-paraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, minus totam quod,  <br>nisi, obcaecati possimus facilis.</p>
+      <div class="new-boxes">
+        <div class="new-cards">
+          <img src="./images/new1.jpg" width="260rem" height="130rem">
+          <h3>Why Reading is important for Our Children?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis </p>
+          <div class="new-profile">
+            <div class="new-img">
+              <img src="./images/profile1.jpg" width="40rem" height="40rem">
+            </div>
+           <div class="new-data">
+            <h5>John</h5>
+            <p>5 days ago</p>
+           </div>
+          </div>
+        </div>
+        <div class="new-cards">
+          <img src="./images/new2.jpg" width="260rem" height="130rem">
+          <h3>Why Reading is important for Our Children?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis </p>
+          <div class="new-profile">
+            <div class="new-img">
+              <img src="./images/profile2.jpg"  width="40rem" height="40rem">
+            </div>
+           <div class="new-data">
+            <h5>jasmine</h5>
+            <p>2 days ago</p>
+           </div>
+          </div>
+        </div>
+        <div class="new-cards">
+          <img src="./images/new3.jpg" width="260rem" height="130rem">
+          <h3>Why Reading is important for Our Children?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis  p>
+            <div class="new-profile">
+              <div class="new-img">
+                <img src="./images/profile3.jpg" width="40rem" height="40rem">
+              </div>
+             <div class="new-data">
+              <h5>Carlie</h5>
+              <p>6 days ago</p>
+             </div>
+            </div>
+        </div>
+        <div class="new-cards">
+          <img src="./images/new4.jpg" width="260rem" height="130rem">
+          <h3>Why Reading is important for Our Children?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis </p>
+          <div class="new-profile">
+            <div class="new-img">
+              <img src="./images/profile4.jpg"  width="40rem" height="40rem">
+            </div>
+           <div class="new-data">
+            <h5>James</h5>
+            <p>2 days ago</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- Testimonials -->
+     <section id="testimonials">
+      <h3>Testimonials</h3>
+      <p id="testi-paraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Unde, minus totam   obcaecati .</p>
+      <div class="testimonials-boxes">
+        <div class="testimonials-card">
+          <div class="testi-icons">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+          <p>Lorem ipsum dolor, sit amet elit Unde,<br> minus totam quod,nisi, obcaecati  <br> possimus facilis.</p>
+          <div class="testimonials-profile">
+           <div class="testimonials-data">
+            <h5>John</h5>
+            <p>Book Lovers</p>
+           </div>
+           <div class="testimonials-img">
+            <img src="./images/profile1.jpg"  width="40rem" height="40rem">
+          </div>
+          </div>
+        </div>
+        <div class="testimonials-card">
+          <div class="testi-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>Lorem ipsum dolor, sit amet elit Unde,<br> minus totam quod,nisi, obcaecati  <br> possimus facilis.</p>
+          <div class="testimonials-profile">
+           <div class="testimonials-data">
+            <h5>Jasmine</h5>
+            <p>Book Lovers</p>
+           </div>
+           <div class="testimonials-img">
+            <img src="./images/profile2.jpg"  width="40rem" height="40rem">
+          </div>
+          </div>
+        </div>
+        <div class="testimonials-card">
+          <div class="testi-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>Lorem ipsum dolor, sit amet elit Unde,<br> minus totam quod,nisi, obcaecati  <br> possimus facilis.</p>
+          <div class="testimonials-profile">
+           <div class="testimonials-data">
+            <h5>carlie</h5>
+            <p>Book Lovers</p>
+           </div>
+           <div class="testimonials-img">
+            <img src="./images/profile3.jpg"  width="40rem" height="40rem">
+          </div>
+          </div>
+        </div>
+        <div class="testimonials-card">
+          <div class="testi-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>Lorem ipsum dolor, sit amet elit Unde,<br> minus totam quod,nisi, obcaecati  <br> possimus facilis..</p>
+          <div class="testimonials-profile">
+           <div class="testimonials-data">
+            <h5>James</h5>
+            <p>Book Lovers</p>
+           </div>
+           <div class="testimonials-img">
+            <img src="./images/profile4.jpg"  width="40rem" height="40rem">
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review -->
+     <div class="review">
+      <div class="review-boxes">
+      <div class="review-card">
+        <div class="book-icon">
+          <i class='bx bx-store-alt'></i>
+
+          <h5>268</h5>
+        </div>
+        <p>Our stores around world</p>
+      </div>
+      <div class="review-card">
+        <div class="book-icon">
+          <i class="fa-solid fa-people-group"></i>
+          <h5>25,634</h5>
+        </div>
+        <p>Our Happy Readers</p>
+      </div>
+      <div class="review-card">
+        <div class="book-icon">
+        <i class='bx bxs-book'></i>
+        <h5>68+k</h5>
+      </div>
+        <p>Book Collections</p>
+      </div>
+    </div>
+     </div>
+     <div class="newsletter">
+      <div class="news-data">
+        <p>Subscribe our Newsletter<br> for newest books Updates</p>
+      </div>
+      <div class="news-search">
+        <input type="text" placeholder="type your email here"> 
+        <button type="submit">SUBSCRIBE</button>
+      </div>
+     </div>
+     <!-- footer -->
+     <div class="footer">
+      <div class="footer-data">
+        <img src="./images/logo.png" width= "60rem"/>
+        <a href="#">DHOOBAALE</a>
+        <p>Lorem ipsum dolor sit amet elit Unde minus totam quod nisi obcaecati possimus facilis..</p>
+        <h2>Follow Us</h2>
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/simadlibrary?igsh=MWtzMXM2dHhwMndheg=="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@simaduniversitymuqdisho?si=2wlp_4MDH3cZWQI7"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/share/Gp267LVJvrud72Pi/?mibextid=kFxxJD"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/SIMADUniversity"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="quick-links">
+        <h2>Quick Links</h2>
+        <a href="./index.html">Home</a>
+        <a href="./books.html">Books</a>
+        <a href="#skills">Audiobooks</a>
+        <a href="#projects">Textbooks</a>
+        <a href="#contact">Magazine</a> 
+        <a href="#contact">Testiminol</a>
+      </div>
+      <div class="costumer-area">
+        <h2>costumer-area</h2>
+        <a href="#">My Accounts</a>
+        <a href="#">Orders</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">FAQ</a> 
+      </div>
+      <div class="footer-news">
+        <h4>Don't miss the newest Books</h4>
+        <p>Lorem ipsum dolor sit amet elit Unde minus totam quod nisi obcaecati possimus facilis..</p>
+        <div class="footer-search">
+          <input type="text" placeholder="type your email here"> 
+          <button type="submit">SUBSCRIBE</button>
+        </div>
+      </div>
+      
+     </div>
+     <hr>
+     <footer>
+      <p>@Copyright 2024 All right reserved.</p>
+     </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

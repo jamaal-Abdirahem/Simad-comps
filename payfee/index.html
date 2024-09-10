@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon icon -->
+    <link rel="icon" href="/img/payfee logo.png" type="image/x-icon">
+     <!-- css link -->
+     <link rel="stylesheet" href="style.css">
+    <title>PAYFEE</title>
+</head>
+<body>
+    
+
+    <div class="container">
+    <header>
+        <div class="logo">
+            <img src="img/payfee logo.png" alt="payfee logo" class="logo-img" data-target="home">
+            <h1 class="logo-text" >payfee</h1>
+       
+            <div class="menu">
+                <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+            </div>
+            <div class="side-menu">
+                <ion-icon name="person-outline" class="side-bar-menu"></ion-icon>
+            </div>
+        </div>
+        <div class="search-input">
+            <div class="input-container">
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>  
+            <input type="search" placeholder="search" class="search-input-area"> 
+        </div>
+        </div>
+        
+        <nav>
+        <div class="nav-elements" >
+          <div class="navigation active" data-target="home">
+            <a href="#" class="nav-link "><ion-icon name="home-outline" class="nav-icon " ></ion-icon> 
+            <h2 class="nav-text ">Home</h2></a>
+        </div>  
+
+        <div class="navigation" data-target="Clearance cards">
+            <a href="#" class="nav-link"><ion-icon name="print-outline" class="nav-icon" ></ion-icon> 
+            <h2 class="nav-text ">Clearance cards</h2></a>
+        </div>  
+
+        <div class="navigation" data-target="payment-history">
+            <a href="#" class="nav-link"><ion-icon name="receipt-outline" class="nav-icon " ></ion-icon> 
+            <h2 class="nav-text">Payment History</h2></a>
+        </div>  
+
+        <div class="navigation" data-target="make-payment">
+            <a href="#" class="nav-link"><ion-icon name="cash-outline" class="nav-icon" ></ion-icon> 
+            <h2 class="nav-text">Make a Payment</h2></a>
+        </div>  
+        <div class="nav-bottom">
+            <div class="studdnt-icon">
+            <a href="#"> <ion-icon name="person-outline" class="s-icon"></ion-icon></a>
+            </div> 
+            <div class="student-details">
+             <span class="student-name">Jamal Abdirahim</span>
+             <span class="student-status">Active Simad Student</span>
+            </div>
+            <div class="logout">
+            <a href="#"> <ion-icon name="log-out-outline" class="logout-icon"></ion-icon></a>
+            </div>
+         </div> 
+        
+    </div>  
+  
+    </nav>
+      
+    </header>
+     
+    <section class="main page-container">
+        <div class="main-page ">
+            <!-- Home Section -->
+            <div id="home" class="page-section active-main">    
+            <div class="main-welcome-header">
+                <h2>Welcome,<span class="welcome-student-name active-name"> Jamaal</span></h2>
+                <p class="main-welcome-description">Effortlessly Access and Instantly Pay Your Tuition Fees – Anytime, Anywhere in Minutes.</p>
+            </div>
+            <div class="account-details-card">
+                <div class="account-bank-details">
+                    <p class="account-bank-name">Premier Bank</p>
+                    <p class="account-bank-status">Active Account</p>
+                    <div class="accoun-hidden-details">
+                        <span class="accoun-hidden-number">●●●● ●●●● ●●●● 9999</span>
+                    </div>
+                   
+                </div>
+                <div class="account-balance-details">
+                    <span class="current-account">Current Balance</span>
+                    <span class="current-balance">$41,382.80</span>
+                </div>
+            </div>
+            <div class="main-buttons">
+                 <button class="payfee-button" data-target="make-payment">
+                    <ion-icon name="wallet-outline" class="payfee-btn-icon"></ion-icon>
+                    <span class="payfee-btn-text">Pay your fees</span>
+                </button>
+
+                <button class="download-clearance-button" data-target="Clearance cards">
+                    <ion-icon name="download-outline" class="download-clearance-btn-icon"></ion-icon>
+                    <span class="clearance-btn-text">Get Clearance</span>
+                </button>
+            </div>
+
+            <div class="transaction-details">
+
+                    <div class="header">
+                        <h2>Recent transactions</h2>
+                        <button class="view-all-btn">View all</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Transaction</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                   <span class="text-img">TF</span>
+                                    <span class="Transaction-description">Tuition fees</span>
+                                </td>
+                                <td class="amount">+ $120.00</td>
+                                <td><span class="status success">● Success</span></td>
+                                <td>Wed 2:40pm</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="text-img">IM</span>
+                                    <span class="Transaction-description"> Iml fees</span>
+                                   
+                                </td>
+                                <td class="amount">+ $94.00</td>
+                                <td><span class="status success">● Success</span></td>
+                                <td>Wed 2:45pm</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="text-img">ID</span>
+                                    <span class="Transaction-description"> ID card</span>
+                                   
+                                </td>
+                                <td class="amount">+ $5.00</td>
+                                <td><span class="status success">● Success</span></td>
+                                <td>Wed 2:47pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+            </div>
+        </div>
+
+         <!-- Clearance cards section -->
+        <div id="Clearance cards" class="page-section">
+            <div class="clearance-card-history-header">
+                <p class="clearance-card-history-header-title">Clearance Card's History </p>
+                <p class="clearance-card-history-header-description">View Your Past Clearance Crad's Over Time</p>
+
+            </div>
+    <div class="clearance-card-container">
+             <div class="cards">
+                <div class="cards-header">
+                    <span class="cards-heaader-title">Simad University</span>
+                    <span class="semester-name">Semester One</span>
+                </div>
+                <div class="cards-footer">
+                    <a href="#">Download</a>
+                </div>
+             </div>     
+             <div class="cards">
+                <div class="cards-header">
+                    <span class="cards-heaader-title">Simad University</span>
+                    <span class="semester-name">Semester Two</span>
+                </div>
+                <div class="cards-footer">
+                    <a href="#">Download</a>
+                </div>
+             </div>     
+             <div class="cards">
+                <div class="cards-header">
+                    <span class="cards-heaader-title">Simad University</span>
+                    <span class="semester-name">Semester Three</span>
+                </div>
+                <div class="cards-footer">
+                    <a href="#">Download</a>
+                </div>
+             </div>     
+             <div class="cards">
+                <div class="cards-header">
+                    <span class="cards-heaader-title">Simad University</span>
+                    <span class="semester-name">Semester Four</span>
+                </div>
+                <div class="cards-footer">
+                    <a href="#">Download</a>
+                </div>
+             </div>     
+             <div class="cards">
+                <div class="cards-header">
+                    <span class="cards-heaader-title">Simad University</span>
+                    <span class="semester-name">Semester Five</span>
+                </div>
+                <div class="cards-footer">
+                    <a href="#">Download</a>
+                </div>
+             </div>     
+             <div class="cards">
+                <div class="cards-header">
+                    <span class="cards-heaader-title">Simad University</span>
+                    <span class="semester-name">Semester Six</span>
+                </div>
+                <div class="cards-footer">
+                    <a href="#">Download</a>
+                </div>
+             </div>     
+    
+            </div>
+        </div>
+
+        <!-- Payment History Section -->
+        <div id="payment-history" class="page-section ">
+            <div class="payment-history-header">
+                <p class="payment-history-header-title">Payment History</p>
+                <p class="payment-history-header-description">Gain Insights and Track Your Payment Over Time</p>
+
+            </div>
+
+            <div class="account-details-card IBS--card">
+                <div class="account-bank-details">
+                    <p class="account-bank-name">IBS Bank</p>
+                    <p class="account-bank-status">Second Account</p>
+                    <div class="accoun-hidden-details">
+                        <span class="accoun-hidden-number">●●●● ●●●● ●●●● 9999</span>
+                    </div>
+                   
+                </div>
+                <div class="account-balance-details">
+                    <span class="current-account">Current Balance</span>
+                    <span class="current-balance">$10,382.80</span>
+                </div>
+            </div>
+            <div class="transaction-details">
+
+                <div class="header">
+                    <h2>Recent transactions</h2>
+                    <button class="view-all-btn">View all</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transaction</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                               <span class="text-img">TF</span>
+                                <span class="Transaction-description">Tuition fees</span>
+                            </td>
+                            <td class="amount">+ $120.00</td>
+                            <td><span class="status success">● Success</span></td>
+                            <td>Wed 2:40pm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <span class="text-img">TF</span>
+                                <span class="Transaction-description">Tuition fees</span>
+                            </td>
+                            <td class="amount">+ $200.00</td>
+                            <td><span class="status success">● Success</span></td>
+                            <td>Wed 2:45pm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="text-img">IM</span>
+                                <span class="Transaction-description"> Iml fees</span>
+                               
+                            </td>
+                            <td class="amount">+ $94.00</td>
+                            <td><span class="status success">● Success</span></td>
+                            <td>Wed 2:50pm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="text-img">IM</span>
+                                <span class="Transaction-description"> Iml fees</span>
+                               
+                            </td>
+                            <td class="amount">+ $46.00</td>
+                            <td><span class="status success">● Success</span></td>
+                            <td>Wed 2:55pm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="text-img">IM</span>
+                                <span class="Transaction-description"> Iml fees</span>
+                               
+                            </td>
+                            <td class="amount">+ $30.00</td>
+                            <td><span class="status success">● Success</span></td>
+                            <td>Wed 2:57pm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="text-img">ID</span>
+                                <span class="Transaction-description"> ID card</span>
+                               
+                            </td>
+                            <td class="amount">+ $5.00</td>
+                            <td><span class="status success">● Success</span></td>
+                            <td>Wed 3:00pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+             <div class="table-pagination">
+                <div class="prev-btn">
+                <a href="#"> <ion-icon name="arrow-back-outline" class="prev-btn-icons"></ion-icon></a>
+                </div>
+                <div class="table-pagonation-btn">
+                    <a href="#" class="table-pages-btn">1</a>
+                    <a href="#" class="table-pages-btn">2</a>
+                    <a href="#" class="table-pages-btn">3</a>
+                    <a href="#" class="table-pages-btn">4</a>
+                    <a href="#" class="table-pages-btn">5</a>
+                </div>
+                <div class="prev-btn">
+                    <a href="#"><ion-icon name="arrow-forward-outline" class="prev-btn-icons"></ion-icon></a>
+                </div>
+             </div>
+                  
+                   
+            
+        </div>
+        </div>
+    
+         <!-- Make a Payment Section -->
+        <div id="make-payment" class="page-section">
+           
+            <div class="form-container">
+                <form id="paymentForm">
+                    <div class="section">
+                        <h2>Transfer details</h2>
+                        <div class="form-group">
+                            <label for="sourceBank">Select Source Bank</label>
+                            <select id="sourceBank" required>
+                                <option value="" disabled selected>Select Bank</option>
+                                <option value="Account1">Premier Bank</option>
+                                <option value="Account2">IBS Bank</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="senderName">Sender Name</label>
+                            <input type="text" id="senderName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="transferNote">Transfer Note (Optional)</label>
+                            <textarea id="transferNote" rows="4" placeholder="Enter your message..."></textarea>
+                        </div>
+                    </div>
+        
+                    <div class="section">
+                        <h2>Bank account details</h2>
+                        <div class="form-group">
+                            <label for="recipientName">Recipient's Name</label>
+                            <input type="text" id="recipientName" value="SIMAD UNIVERSITY" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="accountNumber">Bank Account Number</label>
+                            <input type="text" id="accountNumber" value="00233937385" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" value="40000" required>
+                        </div>
+                    </div>
+        
+                    <button type="submit" class="transfer-button">Transfer Fee</button>
+                </form>
+            </div>
+        
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="receipt">
+                        <div class="receipt-header">
+                            <div class="success-icon">&#10004;</div>
+                            <h2>Payment Success!</h2>
+                        </div>
+                        <div class="receipt-details">
+                            <p><strong>Ref Number:</strong> <span id="refNumber"></span></p>
+                            <p><strong>Payment Time:</strong> <span id="paymentTime"></span></p>
+                            <p><strong>Sender Name:</strong> <span id="modalSenderName"></span></p>
+                            <p><strong>Recipient Name:</strong> <span id="modalRecipientName"></span></p>
+                            <p><strong>Bank Account Number:</strong> <span id="modalAccountNumber"></span></p>
+                            <p><strong>Amount:</strong> <span id="modalAmount"></span></p>
+                            <p><strong>Tex Fee:</strong> <span id="adminFee"></span></p>
+                        </div>
+
+                        <button class="clearance-button" data-target="Clearance cards">Get Clearance Card</button>
+                    </div>
+                </div>
+            </div>
+        
+         </div>
+        
+    </div>
+    </section>
+
+    <section class="aside">
+        <div class="aside-header-bg " >
+        </div>
+        <div class="student-profile">
+            <div class="student-profile-img">
+                <a href="#"> <ion-icon name="person-outline" class="profile-icon"></ion-icon></a>
+            </div>
+            <div class="student-profile-details">
+                <h2 class="student-profile-name">Jamal Abdirahim</h2>
+                 <span class="student-profile-email">Jamal32@student.simad.edu.so</span>
+            </div>
+        </div> 
+ <div class="credit-card-details">
+  <div class="credit-card-details-header">
+    <h2>Active Methods</h2>
+    <button class="add-credit-card-btn">
+        <a href="#"><ion-icon name="add-outline" class="add-credit-card-icon"></ion-icon> 
+        <span >Add Method</span></a>
+    </button>
+  </div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <p class="heading_8264">Premier Bank</p>
+      <svg
+        class="credit-logo"
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="36"
+        height="36"
+        viewBox="0 0 48 48"
+      >
+        <path
+          fill="#ff9800"
+          d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+        ></path>
+        <path
+          fill="#d50000"
+          d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
+        ></path>
+        <path
+          fill="#ff3d00"
+          d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+        ></path>
+      </svg>
+      <svg
+        version="1.1"
+        class="chip"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="30px"
+        height="30px"
+        viewBox="0 0 50 50"
+        xml:space="preserve"
+      >
+        <image
+          id="image0"
+          width="50"
+          height="50"
+          x="0"
+          y="0"
+          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+              AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAACNcTiVeUKVeUOY
+              fEaafEeUeUSYfEWZfEaykleyklaXe0SWekSZZjOYfEWYe0WXfUWXe0WcgEicfkiXe0SVekSXekSW
+              ekKYe0a9nF67m12ZfUWUeEaXfESVekOdgEmVeUWWekSniU+VeUKVeUOrjFKYfEWliE6WeESZe0GS
+              e0WYfES7ml2Xe0WXeESUeEOWfEWcf0eWfESXe0SXfEWYekSVeUKXfEWxklawkVaZfEWWekOUekOW
+              ekSYfESZe0eXekWYfEWZe0WZe0eVeUSWeETAnmDCoWLJpmbxy4P1zoXwyoLIpWbjvXjivnjgu3bf
+              u3beunWvkFWxkle/nmDivXiWekTnwXvkwHrCoWOuj1SXe0TEo2TDo2PlwHratnKZfEbQrWvPrWua
+              fUfbt3PJp2agg0v0zYX0zYSfgkvKp2frxX7mwHrlv3rsxn/yzIPgvHfduXWXe0XuyIDzzISsjVO1
+              lVm0lFitjVPzzIPqxX7duna0lVncuHTLqGjvyIHeuXXxyYGZfUayk1iyk1e2lln1zYTEomO2llrb
+              tnOafkjFpGSbfkfZtXLhvHfkv3nqxH3mwXujhU3KqWizlFilh06khk2fgkqsjlPHpWXJp2erjVOh
+              g0yWe0SliE+XekShhEvAn2D///+gx8TWAAAARnRSTlMACVCTtsRl7Pv7+vxkBab7pZv5+ZlL/UnU
+              /f3SJCVe+Fx39naA9/75XSMh0/3SSkia+pil/KRj7Pr662JPkrbP7OLQ0JFOijI1MwAAAAFiS0dE
+              orDd34wAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IDx2lsiuJAAACLElEQVRIx2Ng
+              GAXkAUYmZhZWPICFmYkRVQcbOwenmzse4MbFzc6DpIGXj8PD04sA8PbhF+CFaxEU8iWkAQT8hEVg
+              OkTF/InR4eUVICYO1SIhCRMLDAoKDvFDVhUaEhwUFAjjSUlDdMiEhcOEItzdI6OiYxA6YqODIt3d
+              I2DcuDBZsBY5eVTr4xMSYcyk5BRUOXkFsBZFJTQnp6alQxgZmVloUkrKYC0qqmji2WE5EEZuWB6a
+              lKoKdi35YQUQRkFYPpFaCouKIYzi6EDitJSUlsGY5RWVRGjJLyxNy4ZxqtIqqvOxaVELQwZFZdkI
+              JVU1RSiSalAt6rUwUBdWG1CP6pT6gNqwOrgCdQyHNYR5YQFhDXj8MiK1IAeyN6aORiyBjByVTc0F
+              qBoKWpqwRCVSgilOaY2OaUPw29qjOzqLvTAchpos47u6EZyYnngUSRwpuTe6D+6qaFQdOPNLRzOM
+              1dzhRZyW+CZouHk3dWLXglFcFIflQhj9YWjJGlZcaKAVSvjyPrRQ0oQVKDAQHlYFYUwIm4gqExGm
+              BSkutaVQJeomwViTJqPK6OhCy2Q9sQBk8cY0DxjTJw0lAQWK6cOKfgNhpKK7ZMpUeF3jPa28BCET
+              amiEqJKM+X1gxvWXpoUjVIVPnwErw71nmpgiqiQGBjNzbgs3j1nus+fMndc+Cwm0T52/oNR9lsdC
+              S24ra7Tq1cbWjpXV3sHRCb1idXZ0sGdltXNxRateRwHRAACYHutzk/2I5QAAACV0RVh0ZGF0ZTpj
+              cmVhdGUAMjAyMy0wMi0xM1QwODoxNToyOSswMDowMEUnN7UAAAAldEVYdGRhdGU6bW9kaWZ5ADIw
+              MjMtMDItMTNUMDg6MTU6MjkrMDA6MDA0eo8JAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAy
+              LTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg=="
+        ></image>
+      </svg>
+      <p class="name">MASTERCARD</p>
+    </div>
+    <div class="flip-card-back">
+      <div class="strip"></div>
+      <svg
+        version="1.1"
+        class="contactless"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="50px"
+        height="50px"
+        viewBox="0 0 50 50"
+        xml:space="preserve"
+      >
+        <image
+          id="image0"
+          width="30"
+          height="30"
+          x="0"
+          y="20"
+          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+      AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+      cwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IEzgIwaKTAAADDklEQVRYw+1XS0iUURQ+f5qPyjQf
+      lGRFEEFK76koKGxRbWyVVLSOgsCgwjZBJJYuKogSIoOonUK4q3U0WVBWFPZYiIE6kuArG3VGzK/F
+      fPeMM/MLt99/NuHdfPd888/57jn3nvsQWWj/VcMlvMMd5KRTogqx9iCdIjUUmcGR9ImUYowyP3xN
+      GQJoRLVaZ2DaZf8kyjEJALhI28ELioyiwC+Rc3QZwRYyO/DH51hQgWm6DMIh10KmD4u9O16K49it
+      VoPOAmcGAWWOepXIRScAoJZ2Frro8oN+EyTT6lWkkg6msZfMSR35QTJmjU0g15tIGSJ08ZZMJkJk
+      HpNZgSkyXosS13TkJpZ62mPIJvOSzC1bp8vRhhCakEk7G9/o4gmZdbpsTcKu0m63FbnBP9Qrc15z
+      bkbemfgNDtEOI8NO5L5O9VYyRYgmJayZ9nPaxZrSjW4+F6Uw9yQqIiIZwhp2huQTf6OIvCZyGM6g
+      DJBZbyXifJXr7FZjGXsdxADxI7HUJFB6iWvsIhFpkoiIiGTJfjJfiCuJg2ZEspq9EHGVpYgzKqwJ
+      qSAOEwuJQ/pxPvE3cYltJCLdxBLiSKKIE5HxJKcTRNeadxfhDiuYw44zVs1dxKwRk/uCxIiQkxKB
+      sSctRVAge9g1E15EHE6yRUaJecRxcWlukdRIbGFOSZCMWQA/iWauIP3slREHXPyliqBcrrD71Amz
+      Z+rD1Mt2Yr8TZc/UR4/YtFnbijnHi3UrN9vKQ9rPaJf867ZiaqDB+czeKYmd3pNa6fuI75MiC0uX
+      XSR5aEMf7s7a6r/PudVXkjFb/SsrCRfROk0Fx6+H1i9kkTGn/E1vEmt1m089fh+RKdQ5O+xNJPUi
+      cUIjO0Dm7HwvErEr0YxeibL1StSh37STafE4I7zcBdRq1DiOkdmlTJVnkQTBTS7X1FYyvfO4piaI
+      nKbDCDaT2anLudYXCRFsQBgAcIF2/Okwgvz5+Z4tsw118dzruvIvjhTB+HOuWy8UvovEH6beitBK
+      xDyxm9MmISKCWrzB7bSlaqGlsf0FC0gMjzTg6GgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDIt
+      MTNUMDg6MTk6NTYrMDA6MDCjlq7LAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTEzVDA4OjE5
+      OjU2KzAwOjAw0ssWdwAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wMi0xM1QwODoxOTo1Nisw
+      MDowMIXeN6gAAAAASUVORK5CYII="
+        ></image>
+      </svg>
+      <p class="number">9759 2484 5269 6576</p>
+      <p class="date_8264">12/25</p>
+      <p class="exp">EXP</p>
+      <p class="cvc_number">123</p>
+      <p class="cvc">CVC</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="general-payment-overview">
+    <div class="general-payment-overview-title">
+        <p>General</p>
+        <ion-icon name="ellipsis-vertical" class="generel-payment-head-icon"></ion-icon>
+    </div>
+<div class="payment-overview">
+    <div class="payment-overview-img">
+        <span>TF</span>
+    </div>
+    <div class="payment-overview-text">
+        <div class="payment-overview-text-description">
+            <p>Tuition fees</p>
+            <span>$120 left</span>
+        </div>
+        <div class="payment-overview-text-prog">
+          <div class="fill"></div>
+        </div>
+    </div>
+</div>
+<div class="payment-overview child-2">
+    <div class="payment-overview-img img-child-2">
+        <span>IM</span>
+    </div>
+    <div class="payment-overview-text text-child-2">
+        <div class="payment-overview-text-description text-des-child-2">
+            <p>Iml fees</p>
+            <span>$44 left</span>
+        </div>
+        <div class="payment-overview-text-prog prog-child-2">
+          <div class="fill"></div>
+        </div>
+    </div>
+</div>
+<div class="payment-overview child-3">
+    <div class="payment-overview-img img-child-3">
+        <span>TL</span>
+    </div>
+    <div class="payment-overview-text text-child-3">
+        <div class="payment-overview-text-description text-des-child-3">
+            <p>Total fees</p>
+            <span>$164 left</span>
+        </div>
+        <div class="payment-overview-text-prog prog-child-3">
+          <div class="fill"></div>
+        </div>
+    </div>
+</div>
+
+</div>
+    </section>
+
+
+</div>
+
+<!-- ionic icons link -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- our javascript file link -->
+ <script src="script.js"></script>
+</body>
+</html>

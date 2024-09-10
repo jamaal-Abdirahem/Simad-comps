@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to favicon -->
+    <link rel="icon" href="img/simad-logo.png" type="simad-logo">
+    <!-- css link -->
+    <link rel="stylesheet" href="login.css">
+    <title>Simad Campus login</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/simad-logo.png" class="logo-img" alt="Simad University Logo">
+        <h2>Simad Campus</h2>
+    </div>
+    <div class="main">
+        <div class="login">
+            <form class="form" id="loginForm">
+                <p class="title">Sign In</p>
+                <p class="message">Sign in to access all campus services and resources.</p>
+                
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Username or ID</span>
+                </label> 
+                    
+                <label>
+                    <input required="" placeholder="" type="password" class="input">
+                    <span>Password</span>
+                </label>
+
+                <button type="submit" class="submit">Login</button>
+
+                <p class="signin">Don't have an account? <a href="#">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Redirect to home.html after submission
+            window.location.href = '/home.html';
+        });
+    </script>
+</body>
+</html>

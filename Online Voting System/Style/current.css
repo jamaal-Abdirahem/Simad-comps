@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(243, 243, 243);
+}
+.current-elections--cards {
+  width: 95%;
+  margin: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0.8rem 0rem;
+}
+.current-card {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: rgb(255, 255, 255);
+  padding: 1em;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.135);
+}
+
+.current-card .profile-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile-box .profile {
+  width: 75px;
+  height: 75px;
+  /* background-color: rgb(227, 214, 25); */
+  /* background-image: url(./Images/xajsi.jpg); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.profile-box .pr1 {
+  background-image: url(./Images/FOCSA.jpg);
+}
+.profile-box .pr2 {
+  background-image: url(./Images/xajsi.jpg);
+}
+.profile-box .pr3 {
+  background-image: url(./Images/MAKSHA.jpg);
+}
+.profile-box .pr4 {
+  background-image: url(./Images/FASA.jpg);
+}
+.profile-box .pr5 {
+  background-image: url(./Images/FASS.jpg);
+}
+.profile-box .pr6 {
+  background-image: url(./Images/FENSA.jpg);
+}
+.current-card .profile-info {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+.profile-info h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+.profile-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  margin-top: 1.5rem;
+}
+.profile-info ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  gap: 0.7em;
+}
+.profile-info ul li i {
+  color: #266374;
+}
+li.date--status {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+li.date--status .election--date {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.cta-info {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-top: 1.3rem;
+}
+.cta-info a.election-btn {
+  text-decoration: none;
+  padding: 0.3rem 1rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  opacity: 0.9;
+}
+.cta-info a.election-btn:hover {
+  opacity: 1;
+}
+.cta-info a.election-btn:active {
+  opacity: 0.8;
+}
+.cta-info a {
+  font-size: 0.8rem;
+}
+.cta-info a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.past-cta {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.past-cta a.election-btn {
+  width: 90%;
+  margin: auto;
+  padding: 0.4rem 0.1rem;
+}

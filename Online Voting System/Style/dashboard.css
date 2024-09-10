@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", system-ui;
+  font-style: normal;
+  background-color: #f5f5f5;
+}
+img {
+  width: 80px;
+}
+a {
+  text-decoration: none;
+}
+.dashboard--container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: transparent;
+}
+.left--sidebar {
+  width: 20%;
+  height: 100vh;
+  background-color: #0e3a57;
+  display: flex;
+  flex-direction: column;
+  grid-area: 1em;
+  padding: 1% 0%;
+}
+.logo--section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.313);
+  padding: 0% 5%;
+  padding-bottom: 0.8em;
+}
+.logo--section img {
+  width: 40px;
+  height: 40px;
+  /* padding: 2%; */
+  /* background-color: aliceblue; */
+  /* border-radius: 50%; */
+}
+.logo--section h1 {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 0%;
+  margin: 0%;
+}
+.dashboard--ul {
+  width: 100%;
+  margin-top: 1.5em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0%;
+}
+.dashboard--ul a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 2.3em;
+  padding: 1.5% 7%;
+  align-items: center;
+}
+.dashboard--ul a:hover {
+  background-color: #266374;
+}
+.dashboard--ul img {
+  width: 1.5em;
+  height: 1.3em;
+}
+.dashboard--ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+.main--container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main--nav {
+  width: 100%;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 0% 1.5rem;
+  position: fixed;
+  top: 0%;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.main--nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.main--nav-logo img {
+  width: 45px;
+  height: 45px;
+  padding: 1%;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.main--nav-logo h1 {
+  padding: 0%;
+  margin: 0%;
+}
+.main--nav.scrolled {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.main--nav-search {
+  width: 17rem;
+  height: 2.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-left: 18em;
+}
+.main--nav-search input[type="text"] {
+  width: 70%;
+  height: 100%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  padding: 0rem 0.3rem;
+  padding-left: 0.8rem;
+  border-radius: 3px 0px 0px 3px;
+}
+.main--nav-search input[type="button"] {
+  width: 30%;
+  height: 100%;
+  outline: none;
+  border: none;
+  text-align: center;
+  background-color: #27ae60;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 0px 3px 3px 0px;
+}
+.main--nav-search input[type="button"]:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.main--nav-search input[type="button"]:active {
+  opacity: 0.8;
+}
+.main--nav-profile {
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: #27ae60;
+  background-image: url(./Images/liban.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon i.fa-bars {
+  font-size: 1.2rem;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}

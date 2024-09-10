@@ -1,0 +1,459 @@
+:root {
+  --primary-color: #0e3a57;
+  --secondary-color: #27ae60;
+  --hover-color: #266374;
+  --end-voting-volor: #fbb316;
+}
+body {
+  position: relative;
+  background-color: #F5F5F5;
+}
+ul {
+  list-style: none;
+}
+
+.main--container {
+  width: 100%;
+  height: auto;
+  padding: 0% 2%;
+  padding-bottom: 1%;
+  padding-bottom: 1em;
+}
+.home--welcome--message {
+  width: 100%;
+  height: auto;
+  padding: 1.5% 2%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+.home--welcome--message h1,
+.home--welcome--message span.user-name {
+  font-size: 18px;
+}
+.home--welcome--message span.user-name {
+  color: #27ae60;
+}
+.home--welcome--message p {
+  font-size: 14.5px;
+  font-weight: 400;
+  margin-top: 0.7em;
+}
+.voting--overview {
+  margin-top: 1.9em;
+}
+.voting-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2rem;
+}
+.left-side-sec {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  border-radius: 8px;
+}
+.current-election {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  background-color: #e8f5e4;
+  /* background-color: #ffffff; */
+  padding: 3% 5%;
+  padding-bottom: 5%;
+  border-radius: 8px;
+}
+.current-election h1 {
+  font-size: 1.2rem;
+}
+.current-election--cards {
+  display: flex;
+  gap: 1.4em;
+  margin-top: 1em;
+}
+.current-election--card {
+  width: 55%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  background-color: #fff;
+  padding: 3% 2%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.current-election-logo {
+  width: 3em;
+  height: 3em;
+  /* background-color: #bed7be; */
+  background-color: #fff;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+li.li-icon {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-left: -2rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+li.maksha-li {
+  margin-right: 3rem;
+}
+li.li-icon i {
+  color: #266374;
+}
+.upcoming-election {
+  background-color: #6db9e26f;
+}
+.focsa {
+  background-image: url(./Images/FOCSA.jpg);
+}
+.maksha {
+  background-image: url(./Images/MAKSHA.jpg);
+}
+.xajsi {
+  background-image: url(./Images/xajsi.jpg);
+}
+.feco {
+  background-image: url(./Images/FECO.jpg);
+}
+h3.election--name {
+  font-size: 0.8rem;
+}
+.current-election--details {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+a.election-btn {
+  padding: 0.3rem 0.8rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background-color: #27ae60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+}
+a.election-btn:hover {
+  background-color: #fbb316;
+}
+.status-election {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.status--dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.status--dot_ongoing {
+  background-color: var(--secondary-color);
+}
+.status--dot_upcoming {
+  background-color: #004f8d;
+}
+.status--dot_pending {
+  background-color: var(--primary-color);
+}
+.status--dot_end {
+  background-color: var(--end-voting-volor);
+}
+span.status {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.a-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a-button_home {
+  margin-top: 2rem;
+}
+a.a-btn {
+  text-decoration: none;
+  padding: 0.5rem 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #27ae60;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+a.a-btn:hover{
+  background-color: #27ae60;
+  color: #fff;
+  opacity: 0.9;
+}
+/* Past election section */
+.right-side-sec {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
+  padding: 2%;
+  background: linear-gradient(to bottom, #266374, #123f5c, #0e3a57, #082c4e);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.past-card-box {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+}
+.right-side-sec h1 {
+  color: #fff;
+}
+.past-election--container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 4% 3%;
+  overflow: hidden;
+}
+.xajsi-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.xajsi-logo .logo {
+  width: 3.5em;
+  height: 3.5em;
+  background-image: url(./Images/xajsi.jpg);
+  background-size: cover;
+  padding: 1%;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.xajsi-logo .logo-name h3 {
+  font-size: 1.5rem;
+}
+h3.faculties-h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+h3.facult-name {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+h3.facult-name,
+h3.facult-name span {
+  color: #004f8d;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+h3.facult-name i {
+  color: #27ae60;
+}
+.break-line {
+  width: 0.1rem;
+  height: 80%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 40%;
+  opacity: 0.4;
+}
+.past-election_info {
+  height: 38vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  background-color: #266374;
+  border-radius: 8px;
+  padding: 2% 3%;
+  margin-top: 1em;
+  position: relative;
+}
+.faculty-past-election {
+  background-color: rgb(85, 138, 172);
+  margin-top: 1rem;
+  position: relative;
+}
+.elected--candidate-image {
+  width: 45%;
+  height: 80%;
+  background-image: url(./Images/XAJSI-president-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.past-focsa {
+  background-image: url(./Images/FOCSA-president-01.jpg);
+}
+.past-feco {
+  background-image: url(./Images/feco-president.jpg);
+}
+.past-maksha {
+  background-image: url(./Images/MAKSHA-President.jpg);
+}
+.elected--candidate-info {
+  width: 70%;
+  color: #fff;
+  margin-left: 0.2rem;
+}
+.elected--candidate-info h3 {
+  font-size: 0.9rem;
+}
+.elected--candidate-info p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+.info--with_icons ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin: 0%;
+  padding: 0%;
+}
+.info--with_icons ul li {
+  font-size: 0.8rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.cta--status {
+  display: flex;
+  align-items: center;
+  gap: 3.4em;
+  margin-top: 1.5em;
+}
+.cta--status .btn {
+  background-color: #fff;
+}
+.cta--status button.btn a {
+  font-size: 0.8rem;
+  color: #0e3a57;
+}
+.cta--status .status--dot {
+  background-color: #fbb316;
+}
+.cta--status span.status {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.faculty-dots {
+  gap: 2em;
+}
+.faculty-dots button.prev,
+.faculty-dots button.next {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a.a--icon-link {
+  text-decoration: none;
+  width: 2.7rem;
+  height: 2.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.366);
+}
+a.a--icon-link:hover {
+  opacity: 0.8;
+}
+a.a--icon-link i {
+  color: #004f8d;
+  font-size: 1rem;
+}
+a.a-prev {
+  position: absolute;
+  left: -0.5rem;
+  pointer-events: disabled;
+  opacity: 0.8;
+}
+a.a-next {
+  position: absolute;
+  right: -0.5rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: #27ae60;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.366);
+  opacity: none;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 57%;
+}
+.carousel-control-prev {
+  left: 3%;
+}
+.carousel-control-next {
+  right: -6%;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  transform: translateX(100%);
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+}
+
+.carousel-item-left,
+.carousel-item-right {
+  transform: translateX(-100%);
+}
+

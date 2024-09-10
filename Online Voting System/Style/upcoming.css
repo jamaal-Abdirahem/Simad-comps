@@ -1,0 +1,18 @@
+.profile-box .upcoming-xajsi {
+  background-image: url(./Images/xajsi.jpg);
+}
+.profile-box .upcoming-fms {
+  background-image: url(./Images/FMS.jpg);
+}
+
+
+
+.cta-info a.a-remaind {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+a.a-remaind i {
+  font-weight: 400;
+  font-size: medium;
+}

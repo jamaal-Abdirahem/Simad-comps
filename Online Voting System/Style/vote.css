@@ -1,0 +1,277 @@
+:root {
+  --primary-color: #0e3a57;
+  --secondary-color: #27ae60;
+  --hover-color: #266374;
+  --end-voting-volor: #fbb316;
+}
+body {
+  color: #231D1F;
+}
+.vote-container {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(251, 251, 251);
+  margin-top: 3rem;
+  padding-bottom: 3%;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.091);
+  position: relative;
+}
+.vote-text {
+  background-image: linear-gradient(to bottom, #266374f6, #123e5cfc, #0e3a57, #082c4ef4), url(./Images/FOCSA.jpg);
+  height: 62vh;
+  padding: 0% 15%;
+}
+/* feco */
+.feco-profile {
+  background-image: linear-gradient(to bottom, #266374f4, #123e5cf2, #0e3a57f2, #082c4ef0), url(./Images/FECO.jpg);
+  height: 62vh;
+  padding: 0% 15%;
+}
+/* maksha */
+  .maksha-profile {
+    background-image: linear-gradient(to bottom, #266374fa, #123e5cfd, #0e3a57fa, #082c4ef9), url(./Images/MAKSHA.jpg);
+  }
+  /* fass */
+  .fass-profile {
+    background-image: linear-gradient(to bottom, #266374fa, #123e5cfd, #0e3a57fa, #082c4ef9), url(./Images/FASS.jpg);
+  }
+/* END */
+.vote-text h3,
+.vote-text p {
+  padding: 0%;
+  margin: 0%;
+}
+.vote-text h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.vote-text p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 1em;
+  line-height: 27px;
+  opacity: 0.9;
+}
+.vote-text li.date--status,
+.details-profile li.date--status {
+  gap: 5em;
+  margin-top: 1.6rem;
+}
+.election--date span {
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.vote-text li.date--status span.status,
+.details-profile li.date--status span.status {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.candidate-container {
+  width: 95%;
+  margin: auto;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.candidate-container h2 {
+  font-size: 1.2rem;
+}
+.candidates {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.097);
+}
+.candidate-image {
+  width: 5rem;
+  height: 4.5rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+.focsa--candidate-1 {
+  background-image: url(./Images/FOCSA-president.jpg);
+}
+.focsa--candidate-2 {
+  background-image: url(./Images/freepik-cover_male-1.avif);
+}
+.focsa--candidate-3 {
+  background-image: url(./Images/hijab-college-student_2.jpg);
+  background-position: top;
+}
+.focsa--candidate-4 {
+  background-image: url(./Images/freepik-cover_male-3.avif);
+}
+.focsa--candidate-5 {
+  background-image: url(./Images/freepik-cover_male-5.avif);
+  background-position: top;
+}
+
+/* feco candidate profile covers */
+.feco-1 {
+  background-image: url(./Images/freepik-cover_male-1.avif);
+}
+.feco-2 {
+  background-image: url(./Images/freepik-cover_male-3.avif);
+}
+.feco-3 {
+  background-image: url(./Images/freepik-cover_male-5.avif);
+  background-position: top;
+}
+/* maksha candidate profile covers */
+.maksha-1 {
+  background-image: url(./Images/freepik-cover_male-3.avif);
+}
+.maksha-2 {
+  background-image: url(./Images/hijab-girl-1.jpg);
+}
+/* fass candidate profile covers */
+.fass-1 {
+  background-image: url(./Images/freepik-cover_male-1.avif);
+}
+.fass-2 {
+  background-image: url(./Images/freepik-cover_male-5.avif);
+  background-position: top;
+}
+.candidate-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.candidate-name-faculty h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+.candidate-name-faculty p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+}
+.candidate-name-faculty .progress {
+  margin-top: 0.5rem;
+}
+.candidate-name-faculty p.faculty {
+  font-weight: 400;
+}
+
+/* input radio button css custom */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+input[type="radio"]:checked {
+  background-color: #4caf50;
+  border-color: var(--secondary-color);
+}
+input[type="radio"]:checked::before {
+  content: "✔";
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  font-size: 17px;
+}
+
+.a-button_vote {
+  margin-top: 1rem;
+}
+.a-button_vote a {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color);
+}
+/* Custom backdrop for the toast */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* another style */
+.btn-primary {
+  background-color: #4caf50;
+  border: none;
+  opacity: 0.9;
+}
+.btn-primary:hover {
+  background-color: #4caf50;
+  opacity: 1;
+}
+.btn-primary:active {
+  background-color: #4caf50;
+  opacity: 0.9;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.popup-content {
+  background-color: #ffff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content .close-popup {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  opacity: 0.6;
+}
+.popup-content .close-popup:hover {
+  opacity: 0.8;
+}
+.popup-content .check-icon {
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-top: 2rem;
+}
+.popup-content p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+.popup-content p.p-title {
+  font-weight: 500;
+}
+.candidate-name-faculty {
+  /* background-color: #fbb316; */
+}
+.progress {
+  height: 5px;
+}

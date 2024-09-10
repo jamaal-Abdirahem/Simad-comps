@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMAD Cast | E-Voting System</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../Style/style.css" />
+    <link rel="stylesheet" href="../Style/home.css" />
+    <link rel="stylesheet" href="../Style/current.css" />
+    <link rel="stylesheet" href="../Style/details.css" />
+    <link rel="stylesheet" href="../Style/vote.css" />
+    <link rel="stylesheet" href="../Style/feco.css" />
+    <link rel="stylesheet" href="../Style/responsive.css" />
+  </head>
+
+  <body>
+    <div class="main--container">
+      <div class="vote-container">
+        <div class="vote-text details-profile maksha-profile">
+          <h3>MAKSHA Chairman Election</h3>
+          <p>
+            Select the candidates who best represent your vision for the Faculty
+            of Law. Review your choices before submitting your vote.
+          </p>
+          <li class="date--status">
+            <div class="election--date">
+              <i class="fa-regular fa-clock"></i>
+              <span>1h 43m left</span>
+            </div>
+            <div class="status-election">
+              <div class="status--dot status--dot_ongoing"></div>
+              <span class="status">Ongoing</span>
+            </div>
+          </li>
+        </div>
+
+        <div class="candidate-container">
+          <h2>Candidates</h2>
+          <!-- candidate 1 -->
+          <div class="candidates">
+            <div class="candidate-image focsa--candidate-1 maksha-1"></div>
+            <div class="candidate-info">
+              <div class="candidate-name-faculty">
+                <h2 id="candidateName">Mustafa Sheikh Nor</h2>
+                <p class="faculty">Faculty of Law (Law)</p>
+                <!-- <p>Department of Computer Science</p> -->
+                <div
+                  class="progress"
+
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 78%"></div>
+                </div>
+              </div>
+              <input type="radio" name="customRadio" value="" />
+            </div>
+          </div>
+          <!-- candidate 2 -->
+          <div class="candidates">
+            <div class="candidate-image focsa--candidate-2 maksha-2"></div>
+            <div class="candidate-info">
+              <div class="candidate-name-faculty">
+                <h2 id="candidateName">Ladan Abdiweli Osman</h2>
+                <p class="faculty">Faculty of Law (Law)</p>
+                <!-- <p>Department of Computer Science</p> -->
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 65%"></div>
+                </div>
+              </div>
+              <input type="radio" name="customRadio" value="" />
+            </div>
+          </div>
+          <!-- candidate 3 -->
+
+          <!-- candidate 4 -->
+
+          <!-- candidate 5 -->
+
+          <!-- end of candidates -->
+        </div>
+
+        <div class="a-button a-button_vote">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#confirmVoteModal"
+            disabled
+            id="submitVoteBtn"
+          >
+            Submit Vote
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="confirmVoteModal"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="confirmVoteModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="confirmVoteModalLabel">
+                  Confirm Your Vote
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  You have selected
+                  <strong id="selectedCandidateName"></strong> as your
+                  candidate.
+                </p>
+                <p>Are you sure you want to submit your vote?</p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="confirmVoteBtn"
+                >
+                  Confirm Vote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="popup-overlay" id="successPopup">
+          <div class="popup-content">
+            <button class="close-popup" id="closePopupBtn">&times;</button>
+            <div class="check-icon">
+              <i class="fa-solid fa-square-check"></i>
+            </div>
+            <p class="p-title">Your vote has been successfully submitted!</p>
+            <p class="p-txt">Thank you for participating in the election</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Script -->
+
+    <script>
+  // Enable the Submit button when a candidate is selected
+  document
+    .querySelectorAll('input[name="customRadio"]')
+    .forEach(function (radio) {
+      radio.addEventListener("change", function () {
+        document.getElementById("submitVoteBtn").disabled = false;
+      });
+    });
+
+  // Display selected candidate's name in the modal
+  document.getElementById("submitVoteBtn").addEventListener("click", function () {
+    var selectedRadio = document.querySelector('input[name="customRadio"]:checked');
+    var candidateName = selectedRadio
+      .closest('.candidate-info')
+      .querySelector('h2')
+      .textContent;
+    document.getElementById("selectedCandidateName").textContent = candidateName;
+  });
+
+  // Show the popup and hide the modal on confirm vote
+  document.getElementById("confirmVoteBtn").addEventListener("click", function () {
+    var modal = bootstrap.Modal.getInstance(
+      document.getElementById("confirmVoteModal")
+    );
+    modal.hide();
+    document.getElementById("successPopup").style.display = "flex";
+  });
+
+  // Close the popup
+  document.getElementById("closePopupBtn").addEventListener("click", function () {
+    document.getElementById("successPopup").style.display = "none";
+  });
+</script>
+  </body>
+</html>

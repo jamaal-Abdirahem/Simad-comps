@@ -1,0 +1,171 @@
+.details-container {
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+}
+.details-card {
+  width: 80%;
+  margin: auto;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 2%;
+}
+.details-profile {
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(
+      to right,
+      #27ae5ffa 0%,
+      /* #2F7581 54%,  */ #2f7581fb 90%
+    ),
+    url(./Images/xajsi.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.7em;
+  color: #fff;
+  padding: 3% 19%;
+}
+.fms-profile {
+  background-image: linear-gradient(
+    to right,
+    #27ae5ffa 0%,
+    /* #2F7581 54%,  */ #2f7581fb 90%
+  ),
+  url(./Images/FMS.jpg);
+  height: 65vh;
+}
+.details-profile h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.details-profile p {
+  letter-spacing: 0.3px;
+  font-weight: 400;
+}
+li.date--status {
+  
+}
+.details-txt {
+  margin-top: 5rem;
+  padding: 0% 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.candidate-details {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  gap: 1em;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+.candidate-details--profile {
+  width: 10rem;
+  height: 100%;
+  background-image: url(./Images/FOCSA-president-01.jpg);
+  background-size: cover;
+  background-position: center;
+
+  /* clip-path: polygon(0 0, 100% 3%, 100% 97%, 0% 100%); */
+}
+.detail-profile-1 {
+  background-image: url(./Images/Mk.jpg);
+}
+.detail-profile-2 {
+  background-image: url(./Images/XAJSI-president-02.jpg);
+}
+.detail-profile-3 {
+  background-image: url(./Images/liban.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.candidate-details--info {
+  width: 13rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 3%;
+}
+.span-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+.span-div span.span-semibold {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  display: block;
+  margin-top: 0.8rem;
+}
+.span-div p {
+  line-height: 24px;
+  font-weight: 400;
+}
+button.candidate-btn {
+  padding: 10px 18px;
+  background-color: #27ae5ffa;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+/* xajsi candidates profile covers | upcoming election */
+.xajsi-1 {
+  background-image: url(./Images/FOCSA-president.jpg);
+}
+.xajsi-2 {
+  background-image: url(./Images/freepik-cover_male-1.avif);
+}
+.xajsi-3 {
+  background-image: url(./Images/freepik-cover_male-3.avif);
+}
+.xajsi-4 {
+  background-image: url(./Images/freepik-cover_male-5.avif);
+  background-position: top;
+}
+.xajsi-5 {
+  background-image: url(./Images/hijab-girl-1.jpg);
+  background-position: center;
+}
+
+/* faculty of medicine & health science */
+.health-1 {
+  background-image: url(./Images/hijab-college-student_2.jpg);
+  background-position: top;
+}
+.health-2 {
+  background-image: url(./Images/freepik-cover_male-2.avif);
+  background-position: top;
+}
+
+/* faculty of education */
+.edu-1 {
+  background-image: url(./Images/freepik-cover_male-2.avif);
+  background-position: top;
+}
+.edu-2 {
+  background-image: url(./Images/male-cover-1.jpg);
+  background-position: top;
+}
+.edu-3 {
+  background-image: url(./Images/freepik-cover_male-5.avif);
+  background-position: top;
+}

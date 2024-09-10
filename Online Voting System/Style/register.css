@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    height: auto;
+}
+.login-container{
+    background-image: none;
+    background-color: rgb(242, 242, 242);
+    height: auto;
+    padding: 3% 0%;
+}
+.logo-login{
+    width: fit-content;
+    padding: 0.3em 1%;
+    background-color: #004f8d;
+    border-radius: 2px;
+}
+form{
+    height: auto;
+}

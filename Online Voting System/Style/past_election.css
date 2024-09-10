@@ -1,0 +1,148 @@
+p {
+    padding: 0%;
+    margin: 0%;
+}
+.past-result {
+    width: 100%;
+    clip-path: none !important;
+    background: linear-gradient(to bottom, #6DADAD, #475FC8);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5% 0%;
+    
+  }
+  .past-display {
+    width: 70%;
+    margin: auto;
+    height: auto;
+    padding: 3% 2%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    text-align: left;
+  }
+  .past-display h2 {
+    color: #475FC8;
+    font-size: 1.6rem;
+  }
+  .past-display p {
+    color: #231D1F;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 0.9rem;
+  }
+  .winner-candidate {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 4fr;
+    align-items: center;
+  }
+  .winner-image {
+    width: 6.3rem;
+    height: 6.5rem;
+    background-color: #fff;
+    background-image: url(./Images/FOCSA-president-01.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.097);
+  }
+  .grid-line {
+    width: 1px;
+    height: 90%;
+    background-color: #f7f7f75f;
+  }
+  .winner-info {
+    text-align: left;
+
+  }
+  h1.winner-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    opacity: 0.9;
+  }
+  .winner-info p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    opacity: 0.9;
+  }
+  .winner-info p span {
+    font-weight: 500;
+    color: #fbb316;
+  }
+
+  /* winners profile images */
+  /* FOCSA */
+  .focsa--1 {
+    background-image: url(./Images/FOCSA-president-02.jpg);
+  }
+  .focsa--2 {
+    background-image: url(./Images/freepik-cover_male-2.avif);
+    background-position: top;
+  }
+  .focsa--3 {
+    background-image: url(./Images/freepik-cover_male-5.avif);
+    background-position: top;
+  }
+   /* FOCSA */
+   .xajsi--1 {
+    background-image: url(./Images/XAJSI-president-01.jpg);
+  }
+  .xajsi--2 {
+    background-image: url(./Images/freepik-cover_male-2.avif);
+    background-position: top;
+  }
+  .xajsi--3 {
+    background-image: url(./Images/freepik-cover_male-5.avif);
+    background-position: top;
+  }
+  .xajsi--4 {
+    background-image: url(./Images/freepik-cover_male-3.avif);
+    background-position: top;
+  }
+  /* MAKSHA */
+  .maksha--1 {
+    background-image: url(./Images/MAKSHA-President.jpg);
+  }
+  .maksha--2 {
+    background-image: url(./Images/freepik-cover_male-1.avif);
+  }
+  .maksha--3 {
+    background-image: url(./Images/freepik-cover_male-3.avif);
+  }
+   /* FASA */
+   .fasa--1 {
+    background-image: url(./Images/freepik-cover_male-1.avif);
+  }
+  .fasa--2 {
+    background-image: url(./Images/hijab-girl-1.jpg);
+  }
+  .fasa--3 {
+    background-image: url(./Images/freepik-cover_male-3.avif);
+  }
+  .fasa--4 {
+    background-image: url(./Images/freepik-cover_male-2.avif);
+    background-position: top;
+  }
+  .fasa--5 {
+    background-image: url(./Images/male-cover-1.jpg);
+    background-position: top;
+  }
+
+  /* fass */
+  .fass--1 {
+    background-image: url(./Images/male-cover-1.jpg);
+    background-position: top;
+  }
+    /* fensa */
+    .fensa--1 {
+      background-image: url(./Images/freepik-cover_male-1.avif);
+      background-position: top;
+    }

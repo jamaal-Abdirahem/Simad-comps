@@ -1,0 +1,368 @@
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .logo--section {
+    display: none;
+  }
+  .left--sidebar {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: -999px;
+    transition: 0.3s ease;
+    z-index: 999;
+    position: fixed;
+    height: 100vh;
+    width: 63%;
+    padding-top: 15%;
+  }
+  .left--sidebar.show-nav {
+    left: 0px;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .main--nav {
+    width: 100%;
+  }
+  .main--container {
+    width: 100%;
+  }
+  .menu-icon {
+    /* position: absolute; */
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main--nav-search {
+    display: none;
+  }
+  .main--nav-profile {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: auto;
+  }
+  .main--nav {
+    height: 9vh;
+    gap: 20px;
+  }
+  .left-side-sec {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .past-card-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .past-election_info {
+    display: flex;
+    flex-direction: column;
+  }
+  .break-line {
+    width: 80%;
+    height: 0.1rem;
+    left: 10%;
+    top: 55%;
+  }
+  .elected--candidate-info {
+    width: auto;
+  }
+  .current-election {
+    padding: 3% 1.4%;
+  }
+  .current-election--card {
+    width: 48%;
+    padding: 3% 0;
+  }
+  .current-election--cards {
+    gap: 0.4rem;
+    justify-content: center;
+  }
+  .current-election--details {
+    gap: 0.5rem;
+  }
+  li.li-icon {
+    margin: 0 auto;
+  }
+  .current-elections--cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main--container {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    padding: 0%;
+  }
+.space-container {
+    width: 100%;
+    height: auto;
+  }
+  /* home page */
+  .home--welcome--message {
+    width: 93%;
+    margin: auto;
+    background-color: #fff;
+    padding: 4% 5%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .home--welcome--message p {
+    padding: 0%;
+    margin: 0%;
+    font-weight: 400;
+  }
+  .voting--overview {
+    width: 100%;
+  }
+  .space-txt {
+    width: 93%;
+    margin: auto;
+  }
+  .left-side-sec {
+    width: 100%;
+    padding: 0%;
+    margin: 0;
+  }
+  .only-current {
+    padding: 0% 0.7rem;
+  }
+  .current-election {
+    padding: 1.4rem 0rem;
+  }
+  .upcoming-election-box {
+    width: 100%;
+    padding: 0%;
+
+  }
+  li.date--status {
+    width: 100%;
+  }
+  li.date--status .status-election {
+    margin-left: 0.6rem;
+  }
+  .upcoming-election {
+    padding: 1.4rem 0.7rem;
+    border-radius: none;
+  }
+  .right-side-sec {
+    width: 100%;
+  }
+  .past-election_info {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5em;
+    padding: 3% 2%;
+  }
+  .break-line {
+    width: 0.1rem;
+    height: 80%;
+    left: 35%;
+    top: 11%;
+    /* top: 85px; */
+    /* display: none; */
+  }
+  .elected--candidate-image {
+    width: auto;
+    height: 100%;
+  }
+
+  .profile-info ul {
+    align-items: center;
+    justify-content: center;
+  }
+  ol,
+  ul {
+    padding-left: 0rem;
+  }
+  button.election-btn {
+    padding: 1rem 0.7rem;
+  }
+  .main--nav {
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffff;
+    color: #333;
+  }
+  .main--nav-logo {
+    margin-left: 3%;
+  }
+  .main--nav-logo img {
+    width: 30px;
+    height: 30px;
+
+  }
+  .main--nav-logo h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.9rem;
+  }
+  .main--nav-profile {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .voting--overview h1 {
+    /* margin-left: 0.7rem; */
+  }
+
+  .current-election {
+    display: grid;
+  }
+  .right-side-sec {
+    padding: 1.5rem 0.7rem;
+  }
+  .past-faculty {
+    padding: 0%;
+  }
+  .elected--candidate-info h3 {
+    font-size: 0.8rem;
+  }
+  .elected--candidate-info p {
+    font-size: 0.7rem;
+  }
+  .past-btn {
+    margin-top: -1%;
+  }
+
+  /* current election */
+  .current-elections--cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .current-elections--cards .profile {
+    width: 90px;
+    height: 90px;
+  }
+  .profile-info ul {
+    width: 60%;
+    margin: auto;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: normal;
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+  .profile-info ul li i {
+    text-align: left;
+    margin: 0%;
+    padding: 0%;
+  }
+  .responsive-cta_info {
+    display: flex;
+    gap: 3rem;
+  }
+  a.election-btn {
+    padding: 0.4rem 0.7rem;
+  }
+  /* details page */
+  .details-container {
+    width: 100%;
+  }
+  .details-card {
+    width: 100%;
+    margin: none;
+  }
+.details-profile {
+  height: 50vh;
+    /* clip-path: none !important; */
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+    padding: 0rem 0.7rem;
+    text-align: left;
+  }
+  .details-profile h2 {
+    font-size: 1.7rem;
+  }
+  .details-profile p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .candidates {
+    gap: 1.2rem;
+  }
+  .candidate-info {
+    gap: 2rem;
+  }
+  .candidate-info button{
+    display: block;
+    font-size: 0.7rem;
+    padding: 0.7rem 0.6rem;
+  }
+
+  .candidate-name-faculty h2 {
+    font-size: 0.8rem;
+  }
+  .candidate-name-faculty p {
+    font-size: 0.7rem;
+  }
+  /* vote page */
+  .vote-container {
+    width: 100%;
+  }
+  input[type="radio"] {
+    width: 25px;
+    height: 25px;
+  }
+  input[type="radio"]:checked::before {
+    content: "✔";
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    font-size: 17px;
+  }
+
+  /* Past election | Results page */
+  .past-result {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5% 0%;
+  }
+
+  .past-display {
+    width: 93%;
+    margin: auto;
+    
+  }
+  .past-display h2 {
+    font-size: 1rem;
+  }
+  .past-display p {
+    font-size: 0.7rem;
+  }
+  .winner-candidate {
+    width: 93%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 4fr;
+    align-items: center;
+  }
+  h1.winner-title {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    opacity: 0.9;
+  }
+  .winner-info p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    opacity: 0.9;
+  }
+  .winner-info p span {
+    font-weight: 500;
+    color: #fbb316;
+  }
+
+}

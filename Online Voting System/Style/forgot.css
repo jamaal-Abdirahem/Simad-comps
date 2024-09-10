@@ -1,0 +1,12 @@
+.login-container{
+    background-image: none;
+}
+.forgot-container{
+    background-color: rgb(242, 242, 242);
+}
+.logo-login{
+    width: fit-content;
+    padding: 0.3em 1%;
+    background-color: #004f8d;
+    border-radius: 2px;
+}
